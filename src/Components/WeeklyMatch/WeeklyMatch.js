@@ -27,6 +27,8 @@ function WeeklyMatch() {
         console.error(error);
       }
     };
+
+    getLeague()
   }, [] );
 
   return (
