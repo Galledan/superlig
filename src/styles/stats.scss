@@ -1,0 +1,22 @@
+@import 'variables';
+
+.stats-container {
+    padding-top: 60px;
+    padding-right: 60px;
+    height: 2660px;
+    width: 100%;
+    background-color: $secondary-color;
+    display: flex;
+        justify-content: center;
+  
+
+    .stats {
+        padding-top: 50px;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}

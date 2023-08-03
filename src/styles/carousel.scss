@@ -1,0 +1,53 @@
+@import 'variables';
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  z-index: 0!important;
+  height: 100%;
+  width: 100%;
+
+  .slider .awssld {
+
+    --slider-height-percentage: 57%!important;
+    --slider-transition-duration: 400ms!important;
+    --organic-arrow-thickness: 7px!important;
+    --organic-arrow-border-radius: 30px!important;
+    --organic-arrow-height: 40px!important;
+    --organic-arrow-color: #ffffff!important;
+    --control-button-width: 10%!important;
+    --control-button-height: 25%!important;
+    --control-button-background: transparent!important;
+    --control-bullet-color: transparent!important;
+    --control-bullet-active-color: transparent!important;
+    --loader-bar-color: transparent!important;
+    --loader-bar-height: 1px!important;
+    }
+}
+
+.slider .awssld__content {
+  position: relative;
+}
+
+
+.slider .awssld__content::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)); /* Adjust the opacity to your liking */
+  z-index: 1; /* Place the black fade below the slide text */
+}
+
+.slider .slide-content {
+  font-size: 60px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 4; /* Place the slide text above the black fade */
+  padding-top: 200px;
+  color: white;
+  text-align: center;
+}

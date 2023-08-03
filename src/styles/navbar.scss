@@ -1,0 +1,35 @@
+@import 'variables';
+
+.navbar {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid $secondary-color;
+  position: fixed;
+  background-color: $primary-color;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .navs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 75%;
+
+    a {
+      text-decoration: none;
+      color: $secondary-color;
+      font-weight: 700;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.navbar-logo {
+  filter: brightness(0) invert(1);
+}

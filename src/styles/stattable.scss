@@ -1,0 +1,56 @@
+@import "variables";
+
+.stat-table-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  width: 325px;
+  align-items: center;
+  h2 {
+    margin: 0;
+    height: 50px;
+  }
+
+  .stat-table {
+    width: 100%;
+    height: 500px;
+
+    .table-hero {
+      height: 30%;
+      width: 100%;
+      border-radius: 5px 5px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-inline: 10px;
+
+      .table-hero-text {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        h3 {
+          margin: 0;
+        }
+      }
+    }
+
+    .table-others {
+      background-color: $primary-color;
+      color: white;
+      border-radius: 0px 0px 5px 5px;
+      width: 100%;
+      height: 65%;
+      padding: 10px;
+      .table-normal {
+        height: 35px;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
