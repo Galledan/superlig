@@ -7,6 +7,9 @@ Dünyaca ünlü 5 ligin kendine özel lig siteleri var ancak bizim ligimizin bir
 
 All the top leagues around the world have their own website but our Turkish League do not have that. We can only achieve information about our league from TFF.org or beIN SPORTS. So I decided to create a concept website for our league.
 
+## Canlı Site/ Live Website
+
+[Site Linki/Website Link](https://superlig.netlify.app)
 
 ## Sayfalar/Pages
 
