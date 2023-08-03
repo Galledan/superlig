@@ -62,4 +62,5 @@ This page is not in development yet but It will be in as soon as possible. This 
 * **Ana sayfaya daha fazla içerik eklemek. / Adding more content to the home page.**
 * **Haber sayfasını bitirmek. / Finishing news page.**
 * **İstatistiklere oyuncu kısmı eklemek. / Adding player section to the stats page.**
+*  **Siteyi responsive hale getirmek. / Responsive design for the website.
 * **Başka iyileştirmeler.../ Other improvements...**
