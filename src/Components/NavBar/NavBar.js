@@ -6,7 +6,6 @@ function NavBar() {
     <nav class="navbar">
       <img
         className="navbar-logo"
-        height={50}
         src={require("../../Assets/logo.png")}
         alt="logo"
       />

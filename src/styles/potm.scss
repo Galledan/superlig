@@ -25,7 +25,7 @@
   }
 
   &:hover {
-    width: 350px; // Increase the width on hover
+    width: 350px;
 
     &::before {
       background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)); // Change background on hover for ::before
@@ -66,4 +66,35 @@
       visibility: visible; // Show the overlay on hover
     }
   }
+}
+
+
+@media screen and (max-width: $small-screen) {
+  .potm {
+    width: 50%;
+    height: 100px;
+
+    &:hover {
+      width: 162.5px;
+    }
+
+    img {
+      object-fit: fill;
+    }
+  
+
+    .overlay {
+      height: 25%;
+      p:first-child{
+        font-size: 10px;
+      }
+      p:nth-child(2){
+        font-size: 8px;
+      }
+  }
+
+  }
+
+
+
 }

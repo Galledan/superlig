@@ -19,7 +19,6 @@ function MainPage() {
         <div className="potm-banner">
           <img
             className="navbar-logo"
-            height={200}
             src={require("../../Assets/logo.png")}
             alt="logo"
           />

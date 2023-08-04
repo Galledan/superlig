@@ -2,6 +2,7 @@
   "name": "superlig",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://tffapi-1-y6918016.deta.app/live",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

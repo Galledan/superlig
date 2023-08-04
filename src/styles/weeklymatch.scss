@@ -1,42 +1,69 @@
-@import 'variables';
+@import "variables";
 
 .matches {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  .match {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+    background-color: $third-color;
+    border-radius: 10px;
+    color: $secondary-color;
 
-    .match{
-        display: flex;
-        flex-direction: column;
-        width: 200px;
-        height: 100px;
-        background-color: $third-color;
-        border-radius: 10px;
-        color: $secondary-color;
-
-        .match-top, .match-bottom {
-            display: flex;
-            justify-content: center;
-            height: 25%;
-        }
-
-        .match-mid{
-            height: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-
-        .home, .away {
-            max-height: 50px;
-        }
-
-        .info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-        }
+    .match-top,
+    .match-bottom {
+      display: flex;
+      justify-content: center;
+      height: 25%;
     }
+
+    .match-mid {
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .home,
+    .away {
+      img {
+        height: 50px;
+      }
+
+      max-height: 50px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .matches {
+    width: 100%;
+    .match {
+      width: 120px;
+      height: 60px;
+
+      .home,
+      .away {
+        img {
+          height: 35px;
+        }
+      }
+
+    .match-bottom {
+        font-size: 10px;
+    }
+    }
+  }
 }

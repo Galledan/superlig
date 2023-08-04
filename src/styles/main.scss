@@ -1,6 +1,6 @@
 @import "variables";
 
-.deneme {
+.app-container {
   display: flex;
 }
 
@@ -87,4 +87,64 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+
+@media screen and (max-width: $small-screen) {
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .main {
+    padding-top: 35px;
+    padding-right: 35px;
+    height: 1760px;
+  }
+
+  .hot-news-container {
+    height: 245px;
+  }
+
+  .matches-container {
+    justify-content: flex-start;
+    height: 580px;
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  .potm-container {
+    flex-direction: column;
+    height: 500px;
+
+    .potms {
+      display: flex;
+      flex-wrap: wrap;
+      height: 200px;
+      width: 100%;
+    }
+  
+    .potm-banner {
+      height: 300px;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+
+      img {
+        height: 100px;
+      }
+    }
+  }
+
+
+  .gotw-container {
+    justify-content: flex-start;
+    height: 400px;
+  }
 }

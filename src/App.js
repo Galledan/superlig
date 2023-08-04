@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className="deneme">
+      <div className="app-container">
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/table" element={<TablePage />} />

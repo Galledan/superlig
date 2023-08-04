@@ -28,7 +28,7 @@ function WeeklyMatch() {
       }
     };
 
-    getLeague()
+  getLeague()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [] );
 
@@ -38,9 +38,9 @@ function WeeklyMatch() {
             <div className="match">
             <div className="match-top"></div>
             <div className="match-mid">
-              <div className="home"><img height={50} src={match.teams.home.name === 'Fenerbahce' ? require('../../Assets/Clubs/fb.png') : match.teams.home.logo} alt="home"/></div>
+              <div className="home"><img  src={match.teams.home.name === 'Fenerbahce' ? require('../../Assets/Clubs/fb.png') : match.teams.home.logo} alt="home"/></div>
               <p>-</p>
-              <div className="away"><img height={50}  src={match.teams.away.name === 'Fenerbahce' ? require('../../Assets/Clubs/fb.png') : match.teams.away.logo} alt="away"/></div>
+              <div className="away"><img  src={match.teams.away.name === 'Fenerbahce' ? require('../../Assets/Clubs/fb.png') : match.teams.away.logo} alt="away"/></div>
             </div>
             <div className="match-bottom">{match.fixture.status.short}</div>
           </div>

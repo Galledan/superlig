@@ -32,4 +32,21 @@
 
 .navbar-logo {
   filter: brightness(0) invert(1);
+  height: 50px;
+}
+
+@media screen and (max-width: $small-screen) {
+  .navbar {
+    height: 35px;
+    font-size: 7px;
+
+    .navs {
+      gap: 30px;
+    }
+
+    .navbar-logo{
+      height: 20px;
+    }
+  }
+
 }
