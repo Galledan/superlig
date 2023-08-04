@@ -16,7 +16,10 @@ function App() {
           <Route path="/table" element={<TablePage />} />
           <Route path="/stats" element={<StatsPage />} />
         </Routes>
+        <div>
         <SideBar />
+        </div>
+       
       </div>
     </div>
   );

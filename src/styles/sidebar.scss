@@ -47,7 +47,9 @@
 
 @media screen and (max-width: $small-screen) {
   .sidebar {
+ 
     width: 35px;
+    height: 100%;
   }
 
   .line {

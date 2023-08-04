@@ -42,7 +42,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 12%;
     color: white;
     visibility: hidden;
     transition: visibility 0s, opacity 0.8s ease; 
@@ -72,19 +72,14 @@
 @media screen and (max-width: $small-screen) {
   .potm {
     width: 50%;
-    height: 100px;
+    height: 50%;
 
     &:hover {
-      width: 162.5px;
+      width: 50%;
     }
-
-    img {
-      object-fit: fill;
-    }
-  
 
     .overlay {
-      height: 25%;
+      height: 20%;
       p:first-child{
         font-size: 10px;
       }
