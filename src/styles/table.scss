@@ -37,3 +37,22 @@
     }
 
 }
+
+
+@media screen and (max-width: $small-screen) {
+
+    .main-table {
+        
+        table {
+            margin-top: 20px;
+            height: 90%;
+            width: 90%;
+            font-size: 14px;
+        }
+    
+    }
+
+    .hidden-phone{
+        display: none;
+    }
+}
