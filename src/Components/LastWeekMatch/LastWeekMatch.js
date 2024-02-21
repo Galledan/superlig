@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../../styles/weeklymatch.scss";
-function WeeklyMatch({week}) {
+function LastWeekMatch({week}) {
   const [matches, setMatches] = useState([]);
 
   const options = {
@@ -27,21 +27,24 @@ function WeeklyMatch({week}) {
         console.error(error);
       }
     };
-      getLeague()
+    
+    getLeague()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [] );
 
   return (
-    <div className="week-container">
-      <h1>Haftanın Maçları</h1>
-    
+    <div className="last-week-container">
+        <h1>Geçen Haftanın Maçları</h1>
+   
     <div className="matches">
         {matches.map((match) => (
             <div className="match">
             <div className="match-top"></div>
             <div className="match-mid">
               <div className="home"><img  src={match.teams.home.name === 'Fenerbahce' ? require('../../Assets/Clubs/fb.png') : match.teams.home.logo} alt="home"/></div>
+              <p>{match.goals.home}</p>
               <p>-</p>
+              <p>{match.goals.away}</p>
               <div className="away"><img  src={match.teams.away.name === 'Fenerbahce' ? require('../../Assets/Clubs/fb.png') : match.teams.away.logo} alt="away"/></div>
             </div>
             <div className="match-bottom">{match.fixture.status.short}</div>
@@ -53,4 +56,4 @@ function WeeklyMatch({week}) {
   );
 }
 
-export default WeeklyMatch;
+export default LastWeekMatch;

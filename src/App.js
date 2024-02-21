@@ -5,6 +5,8 @@ import SideBar from "./Components/SideBar/SideBar";
 import MainPage from "./Pages/MainPage/MainPage";
 import TablePage from "./Pages/TablePage/TablePage";
 import StatsPage from "./Pages/StatsPage/StatsPage";
+import NewsPage from "./Pages/NewsPage/NewsPage";
+import DetailedNewsPage from "./Pages/DetailedNewsPage/DetailedNewsPage";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/table" element={<TablePage />} />
           <Route path="/stats" element={<StatsPage />} />
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/news/:news_id" element={<DetailedNewsPage />} />
         </Routes>
         <div>
         <SideBar />
