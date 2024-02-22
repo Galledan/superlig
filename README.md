@@ -9,7 +9,7 @@ All the top leagues around the world have their own website but our Turkish Leag
 
 ## Canlı Site/ Live Website
 
-[Site Linki/Website Link](https://superlig.netlify.app)
+[Site Linki/Website Link](https://superlig.vercel.app)
 
 ## Sayfalar/Pages
 
