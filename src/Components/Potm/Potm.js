@@ -1,5 +1,7 @@
 import React from "react";
 import "../../styles/potm.scss";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Potm() {
   const nominees = [
@@ -25,10 +27,21 @@ function Potm() {
     },
   ];
 
+  const notify = () => toast("Oyunuz alındı");
+
   return (
     <>
       {nominees.map((nominee) => (
-        <div className="potm">
+        <div className="potm" onClick={notify}>
+          <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            theme="dark"
+          />
           <img src={nominee.img} alt="potm1" />
           <div className="overlay">
             <p>{nominee.name}</p>
