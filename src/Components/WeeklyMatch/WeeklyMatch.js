@@ -41,7 +41,9 @@ function WeeklyMatch({week}) {
             <div className="match-top"></div>
             <div className="match-mid">
               <div className="home"><img  src={match.teams.home.name === 'Fenerbahce' ? require('../../Assets/Clubs/fb.png') : match.teams.home.logo} alt="home"/></div>
+              <p>{match.goals.home}</p>
               <p>-</p>
+              <p>{match.goals.away}</p>
               <div className="away"><img  src={match.teams.away.name === 'Fenerbahce' ? require('../../Assets/Clubs/fb.png') : match.teams.away.logo} alt="away"/></div>
             </div>
             <div className="match-bottom">{match.fixture.status.short}</div>

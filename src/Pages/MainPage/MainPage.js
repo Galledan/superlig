@@ -12,17 +12,20 @@ function MainPage() {
 
 
   useEffect(() => {
-    const changeWeek = () => {
-      const todaysDate = new Date();
+    const intervalId = setInterval(() => {
+      // Get today's date
+      const today = new Date();
 
-      const today = todaysDate.getDay()
-      if(today === 2){
+      // Check if today is Tuesday
+      if (today.getDay() === 2) {  // 0 is Sunday, 1 is Monday, ..., 6 is Saturday
+        // Increase the counter
         setWeek((prevWeek) => prevWeek + 1);
       }
-    }
+    }, 24 * 60 * 60 * 1000);  // Check every 24 hours
 
-    changeWeek()
-  },[]);
+    // Clean up the interval when the component is unmounted
+    return () => clearInterval(intervalId);
+  }, []); 
 
  
   return (
